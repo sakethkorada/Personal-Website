@@ -542,9 +542,6 @@ dd {
 
 .project-list {
   display: grid;
-  max-height: 18rem;
-  overflow: auto;
-  padding-right: 0.25rem;
 }
 
 .project-item {
