@@ -8,7 +8,7 @@
       content="Personal portfolio for an undergraduate student: bio, experience, projects, and contact links."
     />
     <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=32" />
+    <link rel="stylesheet" href="styles.css?v=33" />
   </head>
   <body>
     <div class="site-shell">
@@ -246,96 +246,125 @@
         <div class="page-heading">
           <p class="eyebrow">projects</p>
           <h2 id="projects-title">selected work.</h2>
-          <p class="command-note">output: 3 projects returned.</p>
+          <p class="command-note">output: 4 projects returned.</p>
         </div>
         <div class="project-browser">
           <div class="project-list" aria-label="Project list">
-            <button class="project-item is-active" type="button" data-project="one">
-              <span><b>proj</b> project-one</span>
-              <small>one-line hook for recruiters</small>
+            <button class="project-item is-active" type="button" data-project="compressbench">
+              <span><b>proj</b> compressbench</span>
+              <small>compression benchmarking platform</small>
             </button>
-            <button class="project-item" type="button" data-project="two">
-              <span><b>proj</b> project-two</span>
-              <small>short problem / product summary</small>
+            <button class="project-item" type="button" data-project="traffic">
+              <span><b>proj</b> traffic-analytics</span>
+              <small>real-time cv pipeline</small>
             </button>
-            <button class="project-item" type="button" data-project="three">
-              <span><b>proj</b> project-three</span>
-              <small>short build / system summary</small>
+            <button class="project-item" type="button" data-project="jarvis">
+              <span><b>proj</b> jarvis</span>
+              <small>api workflow assistant</small>
+            </button>
+            <button class="project-item" type="button" data-project="valgazer">
+              <span><b>proj</b> val-gazer</span>
+              <small>gaze tracking overlay</small>
             </button>
           </div>
           <div class="project-detail">
-            <article class="project-panel is-active" data-project-panel="one">
-              <p class="manual-line">$ proj project-one --readme</p>
+            <article class="project-panel is-active" data-project-panel="compressbench">
+              <p class="manual-line">$ proj compressbench --readme</p>
               <dl class="manual-output">
                 <div>
                   <dt>stack</dt>
-                  <dd>language / framework / tool</dd>
+                  <dd>c++, go, aws, compression algorithms, binary i/o, rest apis</dd>
                 </div>
                 <div>
                   <dt>desc</dt>
-                  <dd>one-line summary of what it does and who it helps.</dd>
+                  <dd>modular benchmarking platform for lossless compression across text, binary, and raw image formats.</dd>
                 </div>
                 <div>
                   <dt>impact</dt>
-                  <dd>measurable result, technical win, or user benefit.</dd>
+                  <dd>benchmarked 100+ files with up to 65% compression savings and 50+ mb/s throughput on structured data.</dd>
                 </div>
                 <div>
                   <dt>built</dt>
-                  <dd>key systems, api, model, pipeline, ui, or infra.</dd>
+                  <dd>bit-level streams, binary serialization, custom headers, codec interfaces, and a go rest/cloud backend.</dd>
                 </div>
                 <div>
                   <dt>links</dt>
-                  <dd><a href="#" target="_blank" rel="noopener noreferrer">demo</a> / <a href="#" target="_blank" rel="noopener noreferrer">code</a></dd>
+                  <dd>code pending</dd>
                 </div>
               </dl>
             </article>
-            <article class="project-panel" data-project-panel="two">
-              <p class="manual-line">$ proj project-two --readme</p>
+            <article class="project-panel" data-project-panel="traffic">
+              <p class="manual-line">$ proj traffic-analytics --readme</p>
               <dl class="manual-output">
                 <div>
                   <dt>stack</dt>
-                  <dd>language / framework / tool</dd>
+                  <dd>aws, docker, python, yolov8, fastapi, streamlit</dd>
                 </div>
                 <div>
                   <dt>desc</dt>
-                  <dd>one-line summary of the problem, product, or experiment.</dd>
+                  <dd>real-time computer vision pipeline for traffic detection and analytics.</dd>
                 </div>
                 <div>
                   <dt>impact</dt>
-                  <dd>measurable result, technical win, or user benefit.</dd>
+                  <dd>used multithreading to raise throughput to 120+ fps with 105 ms p90 latency.</dd>
                 </div>
                 <div>
                   <dt>built</dt>
-                  <dd>key systems, api, model, pipeline, ui, or infra.</dd>
+                  <dd>containerized yolov8 service plus serverless analytics with aws glue, athena, and streamlit.</dd>
                 </div>
                 <div>
                   <dt>links</dt>
-                  <dd><a href="#" target="_blank" rel="noopener noreferrer">demo</a> / <a href="#" target="_blank" rel="noopener noreferrer">code</a></dd>
+                  <dd><a href="https://github.com/sakethkorada/Traffic-Anaylsis-Platform" target="_blank" rel="noopener noreferrer">code</a></dd>
                 </div>
               </dl>
             </article>
-            <article class="project-panel" data-project-panel="three">
-              <p class="manual-line">$ proj project-three --readme</p>
+            <article class="project-panel" data-project-panel="jarvis">
+              <p class="manual-line">$ proj jarvis --readme</p>
               <dl class="manual-output">
                 <div>
                   <dt>stack</dt>
-                  <dd>language / framework / tool</dd>
+                  <dd>python, gemini cli, rest apis, sqlite, oauth</dd>
                 </div>
                 <div>
                   <dt>desc</dt>
-                  <dd>one-line summary of the build, dataset, algorithm, or workflow.</dd>
+                  <dd>workflow assistant that orchestrates gmail, calendar, and spotify apis through gemini cli.</dd>
                 </div>
                 <div>
                   <dt>impact</dt>
-                  <dd>measurable result, technical win, or user benefit.</dd>
+                  <dd>automated 5+ multi-step workflows including meeting scheduling and playlist generation.</dd>
                 </div>
                 <div>
                   <dt>built</dt>
-                  <dd>key systems, api, model, pipeline, ui, or infra.</dd>
+                  <dd>oauth 2.0 auth and sqlite long-term memory for 10k+ conversation contexts.</dd>
                 </div>
                 <div>
                   <dt>links</dt>
-                  <dd><a href="#" target="_blank" rel="noopener noreferrer">demo</a> / <a href="#" target="_blank" rel="noopener noreferrer">code</a></dd>
+                  <dd><a href="https://github.com/sakethkorada/Jarvis" target="_blank" rel="noopener noreferrer">code</a></dd>
+                </div>
+              </dl>
+            </article>
+            <article class="project-panel" data-project-panel="valgazer">
+              <p class="manual-line">$ proj val-gazer --readme</p>
+              <dl class="manual-output">
+                <div>
+                  <dt>stack</dt>
+                  <dd>python, opencv, mediapipe, scikit-learn, javascript, overwolf api</dd>
+                </div>
+                <div>
+                  <dt>desc</dt>
+                  <dd>gaze tracker and real-time overlay for gameplay analysis.</dd>
+                </div>
+                <div>
+                  <dt>impact</dt>
+                  <dd>trained on 5k samples and reached 97% gaze accuracy at 30 fps.</dd>
+                </div>
+                <div>
+                  <dt>built</dt>
+                  <dd>python gaze-tracking service, random forest regressor, and overwolf event overlay for valorant matches.</dd>
+                </div>
+                <div>
+                  <dt>links</dt>
+                  <dd><a href="https://github.com/sakethkorada/EyeTrack" target="_blank" rel="noopener noreferrer">code</a></dd>
                 </div>
               </dl>
             </article>
@@ -377,6 +406,6 @@
       </footer>
     </div>
 
-    <script src="script.js?v=32"></script>
+    <script src="script.js?v=33"></script>
   </body>
 </html>
