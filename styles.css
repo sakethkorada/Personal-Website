@@ -89,7 +89,7 @@ h3 {
 .chase-cursor {
   position: relative;
   display: inline-block;
-  width: 2.55em;
+  width: clamp(5rem, 36vw, 22rem);
   height: 0.72em;
   flex: 0 0 auto;
   overflow: hidden;
@@ -162,22 +162,22 @@ h3 {
 @keyframes chase-run {
   0% {
     opacity: 0;
-    transform: translate(3.25em, -50%);
+    transform: translate(10.4em, -50%);
   }
 
   14% {
     opacity: 1;
-    transform: translate(2.55em, -50%);
+    transform: translate(8.8em, -50%);
   }
 
   78% {
     opacity: 1;
-    transform: translate(-0.48em, -50%);
+    transform: translate(-0.7em, -50%);
   }
 
   100% {
     opacity: 0;
-    transform: translate(-0.85em, -50%);
+    transform: translate(-1.05em, -50%);
   }
 }
 
@@ -190,27 +190,27 @@ h3 {
 @keyframes ghost-run {
   0% {
     opacity: 0;
-    transform: translate(2.45em, -50%);
+    transform: translate(8.7em, -50%);
   }
 
   8% {
     opacity: 0.6;
-    transform: translate(1.78em, -50%);
+    transform: translate(7.4em, -50%);
   }
 
   70% {
     opacity: 0.6;
-    transform: translate(-0.72em, -50%);
+    transform: translate(-1.25em, -50%);
   }
 
   88% {
     opacity: 0;
-    transform: translate(-1.05em, -50%);
+    transform: translate(-1.55em, -50%);
   }
 
   100% {
     opacity: 0;
-    transform: translate(-1.05em, -50%);
+    transform: translate(-1.55em, -50%);
   }
 }
 
@@ -955,6 +955,10 @@ footer span {
 
   .brand {
     font-size: clamp(1.35rem, 7vw, 2rem);
+  }
+
+  .chase-cursor {
+    width: clamp(3rem, 17vw, 4.25rem);
   }
 
   .skill-row {
